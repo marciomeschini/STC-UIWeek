@@ -61,7 +61,7 @@
     CGContextSaveGState(ctx);
     CGContextSetBlendMode(ctx, kCGBlendModeCopy);
     self.shapeLayer.fillColor = self.fillColor.CGColor;
-    [self.shapeLayer drawInContext:ctx];
+    [self.shapeLayer renderInContext:ctx];
     CGContextRestoreGState(ctx);
     
     //
