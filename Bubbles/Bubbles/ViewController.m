@@ -8,38 +8,46 @@
 
 #import "ViewController.h"
 #import "BubbleView.h"
-
+#import "TextBubbleView.h"
 
 @interface ViewController ()
-@property (nonatomic, retain) BubbleView *bubbleView;
-
 @end
 
 @implementation ViewController
-
-- (void)dealloc
-{
-    self.bubbleView = nil;
-    [super dealloc];
-}
 
 - (void)loadView
 {
     [super loadView];
     
     
+    //
     CGRect rect = (CGRect){10, 10, 300, 300};
-    self.bubbleView = [[[BubbleView alloc] initWithFrame:rect] autorelease];
-    [self.view addSubview:self.bubbleView];
-    self.bubbleView.layer.borderWidth = 1.0f;
+    TextBubbleView *bubbleView = [[[TextBubbleView alloc] initWithFrame:rect] autorelease];
+    bubbleView.mainLabel.text = @"Hello world!";
+    bubbleView.mainLabel.font = [UIFont boldSystemFontOfSize:100];
+    bubbleView.mainLabel.textColor = [UIColor whiteColor];
+    bubbleView.mainLabel.shadowColor = [UIColor blackColor];
+    bubbleView.mainLabel.shadowOffset = CGSizeMake(.0f, -1.0f);
+    [self.view addSubview:bubbleView];
     
-    
-    BubbleView *oneMore = [[[BubbleView alloc] initWithFrame:CGRectMake(50, 340, 80, 80)] autorelease];
-    oneMore.fillColor = [[UIColor blueColor] colorWithAlphaComponent:.5f];
+    //
+    TextBubbleView *oneMore = [[[TextBubbleView alloc] initWithFrame:CGRectMake(50, 340, 80, 80)] autorelease];
+    oneMore.fillColor = [[UIColor blueColor] colorWithAlphaComponent:.3f];
+    oneMore.mainLabel.text = @"A very long text";
+    oneMore.mainLabel.font = [UIFont boldSystemFontOfSize:100];
+    oneMore.mainLabel.textColor = [UIColor whiteColor];
+    oneMore.mainLabel.shadowColor = [UIColor blackColor];
+    oneMore.mainLabel.shadowOffset = CGSizeMake(.0f, -1.0f);
     [self.view addSubview:oneMore];
     
-    BubbleView *last = [[[BubbleView alloc] initWithFrame:CGRectMake(180, 320, 140, 140)] autorelease];
-    last.fillColor = [[UIColor purpleColor] colorWithAlphaComponent:.75f];
+    //
+    TextBubbleView *last = [[[TextBubbleView alloc] initWithFrame:CGRectMake(180, 320, 140, 140)] autorelease];
+    last.fillColor = [[UIColor purpleColor] colorWithAlphaComponent:.6f];
+    last.mainLabel.text = @"6,956";
+    last.mainLabel.font = [UIFont boldSystemFontOfSize:100];
+    last.mainLabel.textColor = [UIColor whiteColor];
+    last.mainLabel.shadowColor = [UIColor blackColor];
+    last.mainLabel.shadowOffset = CGSizeMake(.0f, -1.0f);
     [self.view addSubview:last];
 }
 
