@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "UIImage+Sample.h"
+#import "TableViewController.h"
 
 @implementation AppDelegate
 
@@ -23,8 +25,19 @@
     // Override point for customization after application launch.
 //    self.window.backgroundColor = [UIColor colorWithWhite:.925f alpha:1.0f];
     self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
-    self.window.rootViewController = [[[ViewController alloc] init] autorelease];
     
+    UIViewController *vc = [[[TableViewController alloc] init] autorelease];
+    vc.title = @"title";
+    
+    UINavigationController *nc = [[[UINavigationController alloc] initWithRootViewController:vc] autorelease];
+    
+    UIImage *di = [UIImage stc_navigationBarImage];
+    
+//    UIImageView *iv = [[[UIImageView alloc] initWithImage:di] autorelease];
+//    [vc.view addSubview:iv];
+    [nc.navigationBar setBackgroundImage:di forBarMetrics:UIBarMetricsDefault];
+    
+    self.window.rootViewController = nc;
     
     [self.window makeKeyAndVisible];
     return YES;

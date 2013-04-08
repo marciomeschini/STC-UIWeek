@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A99C8B47171165FF00451072 /* TextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A99C8B46171165FF00451072 /* TextBubbleView.m */; };
+		A99C8B491711A91500451072 /* libRistrettoUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A99C8B481711A91500451072 /* libRistrettoUI.a */; };
+		A99C8B4C1711ADF200451072 /* UIImage+Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = A99C8B4B1711ADF200451072 /* UIImage+Sample.m */; };
+		A99C8B4F1711B19800451072 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99C8B4E1711B19800451072 /* TableViewController.m */; };
 		A9D364B51710242200428642 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D364B41710242200428642 /* UIKit.framework */; };
 		A9D364B71710242200428642 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D364B61710242200428642 /* Foundation.framework */; };
 		A9D364B91710242200428642 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D364B81710242200428642 /* CoreGraphics.framework */; };
@@ -25,6 +28,11 @@
 /* Begin PBXFileReference section */
 		A99C8B45171165FF00451072 /* TextBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBubbleView.h; sourceTree = "<group>"; };
 		A99C8B46171165FF00451072 /* TextBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBubbleView.m; sourceTree = "<group>"; };
+		A99C8B481711A91500451072 /* libRistrettoUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRistrettoUI.a; path = "../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/libRistrettoUI.a"; sourceTree = "<group>"; };
+		A99C8B4A1711ADF200451072 /* UIImage+Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sample.h"; sourceTree = "<group>"; };
+		A99C8B4B1711ADF200451072 /* UIImage+Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sample.m"; sourceTree = "<group>"; };
+		A99C8B4D1711B19800451072 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		A99C8B4E1711B19800451072 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		A9D364B11710242200428642 /* Bubbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D364B41710242200428642 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A9D364B61710242200428642 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99C8B491711A91500451072 /* libRistrettoUI.a in Frameworks */,
 				A9D364D5171025CC00428642 /* QuartzCore.framework in Frameworks */,
 				A9D364B51710242200428642 /* UIKit.framework in Frameworks */,
 				A9D364B71710242200428642 /* Foundation.framework in Frameworks */,
@@ -80,6 +89,7 @@
 		A9D364B31710242200428642 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A99C8B481711A91500451072 /* libRistrettoUI.a */,
 				A9D364D4171025CC00428642 /* QuartzCore.framework */,
 				A9D364B41710242200428642 /* UIKit.framework */,
 				A9D364B61710242200428642 /* Foundation.framework */,
@@ -93,12 +103,16 @@
 			children = (
 				A9D364C31710242200428642 /* AppDelegate.h */,
 				A9D364C41710242200428642 /* AppDelegate.m */,
+				A99C8B4A1711ADF200451072 /* UIImage+Sample.h */,
+				A99C8B4B1711ADF200451072 /* UIImage+Sample.m */,
 				A9D364D6171028D600428642 /* ViewController.h */,
 				A9D364D7171028D600428642 /* ViewController.m */,
 				A9D364D11710255100428642 /* BubbleView.h */,
 				A9D364D21710255100428642 /* BubbleView.m */,
 				A99C8B45171165FF00451072 /* TextBubbleView.h */,
 				A99C8B46171165FF00451072 /* TextBubbleView.m */,
+				A99C8B4D1711B19800451072 /* TableViewController.h */,
+				A99C8B4E1711B19800451072 /* TableViewController.m */,
 				A9D364BB1710242200428642 /* Supporting Files */,
 			);
 			path = Bubbles;
@@ -188,6 +202,8 @@
 				A9D364D31710255100428642 /* BubbleView.m in Sources */,
 				A9D364D8171028D600428642 /* ViewController.m in Sources */,
 				A99C8B47171165FF00451072 /* TextBubbleView.m in Sources */,
+				A99C8B4C1711ADF200451072 /* UIImage+Sample.m in Sources */,
+				A99C8B4F1711B19800451072 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,8 +245,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../RistrettoUI/RistrettoUI/\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -253,8 +271,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../RistrettoUI/RistrettoUI/\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -267,6 +287,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bubbles/Bubbles-Prefix.pch";
 				INFOPLIST_FILE = "Bubbles/Bubbles-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -278,6 +302,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bubbles/Bubbles-Prefix.pch";
 				INFOPLIST_FILE = "Bubbles/Bubbles-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

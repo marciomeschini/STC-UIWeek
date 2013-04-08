@@ -47,6 +47,12 @@
         self.headerLabel.layer.borderWidth = 1.0f;
     }
     
+    [self _layoutMainLabel];
+}
+
+#pragma mark - Private layouts
+- (void)_layoutMainLabel
+{
     // do layout only if it's there
     if (self->_mainLabel)
     {
@@ -61,12 +67,14 @@
         mainLabelFrame.size.height *= 1.0f/3.0f;
         mainLabelFrame = CGRectInset(mainLabelFrame, horizontalInset, .0f);
         
+        
+        
         // sadly it seems there's a bug with the Apple sizeWithFont: minFontSize: ...
         // The size returned by this methos has the correct width, but the height does not account for the actual font size.
         // see http://stackoverflow.com/a/7243465/143000
         //
         CGFloat minimumFontSize = 10.0f;
-        CGFloat actualFontSize = minimumFontSize;
+        CGFloat actualFontSize;//= minimumFontSize;
         [self.mainLabel.text sizeWithFont:self.mainLabel.font
                               minFontSize:minimumFontSize
                            actualFontSize:&actualFontSize

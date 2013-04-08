@@ -28,7 +28,11 @@
     bubbleView.mainLabel.textColor = [UIColor whiteColor];
     bubbleView.mainLabel.shadowColor = [UIColor blackColor];
     bubbleView.mainLabel.shadowOffset = CGSizeMake(.0f, -1.0f);
-    [self.view addSubview:bubbleView];
+    [self.view addSubview:bubbleView]; // layoutSubviews will be called
+    bubbleView.layer.borderWidth = 1.0f;
+    
+//    bubbleView.mainLabel.font = [UIFont boldSystemFontOfSize:20];
+//    [bubbleView setNeedsLayout];
     
     //
     TextBubbleView *oneMore = [[[TextBubbleView alloc] initWithFrame:CGRectMake(50, 340, 80, 80)] autorelease];
@@ -49,6 +53,22 @@
     last.mainLabel.shadowColor = [UIColor blackColor];
     last.mainLabel.shadowOffset = CGSizeMake(.0f, -1.0f);
     [self.view addSubview:last];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // fetch some data from the web
+    
+}
+
+- (void)operationDidEnd
+{
+    // bubble.mainLabel.text = fetchedContent.title;
+    // [bubble refresh]; or [bubble display];
+    
 }
 
 @end

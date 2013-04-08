@@ -38,9 +38,9 @@
         self.contentMode = UIViewContentModeRedraw;
         
         //
-        self.layer.shadowOpacity = .65f;
-        self.layer.shadowOffset = (CGSize){.0f, 5.0f};
-        self.layer.shadowRadius = 20.0f;
+//        self.layer.shadowOpacity = .65f;
+//        self.layer.shadowOffset = (CGSize){.0f, 5.0f};
+//        self.layer.shadowRadius = 20.0f;
         
         self.fillColor = [[UIColor greenColor] colorWithAlphaComponent:.4f];
     }
@@ -48,7 +48,7 @@
 }
 
 - (void)drawRect:(CGRect)rect
-{
+{    
     // Drawing code
     [self _updatePath];
     
@@ -64,6 +64,12 @@
     [self.shapeLayer renderInContext:ctx];
     CGContextRestoreGState(ctx);
     
+//    self.shapeLayer.fillColor = self.fillColor.CGColor;
+//    CGContextAddPath(ctx, self.shapeLayer.path);
+//    CGContextSetFillColorWithColor(ctx, self.shapeLayer.fillColor);
+//    CGContextDrawPath(ctx, kCGPathFillStroke);
+    
+    
     //
     CGContextAddPath(ctx, self.shapeLayer.path);
     CGContextClip(ctx);
@@ -75,7 +81,7 @@
     [self _drawBorderGradientInContext:ctx rect:rect];
     
     //
-    [self _drawBottomGradientInContext:ctx rect:rect];
+//    [self _drawBottomGradientInContext:ctx rect:rect];
     
 //    CGContextRestoreGState(ctx);
     
@@ -106,10 +112,10 @@
         self.shapeLayer.path = [UIBezierPath bezierPathWithOvalInRect:bezierRect].CGPath;
         
         // update also the shadow
-        CGFloat shadowSideRatio = .63f;
-        CGFloat shadowSide = self.diameter*shadowSideRatio;
-        CGRect shadowRect = (CGRect){(self.diameter-shadowSide)*.5f, self.diameter-shadowSide*.65f, shadowSide, shadowSide};
-        self.layer.shadowPath = [UIBezierPath bezierPathWithOvalInRect:shadowRect].CGPath;
+//        CGFloat shadowSideRatio = .63f;
+//        CGFloat shadowSide = self.diameter*shadowSideRatio;
+//        CGRect shadowRect = (CGRect){(self.diameter-shadowSide)*.5f, self.diameter-shadowSide*.65f, shadowSide, shadowSide};
+//        self.layer.shadowPath = [UIBezierPath bezierPathWithOvalInRect:shadowRect].CGPath;
     }
 }
 
@@ -294,7 +300,21 @@
 }
 
 #pragma mark - Public
+- (void)setFillColor:(UIColor *)fillColor
+{
+    if (!CGColorEqualToColor(fillColor.CGColor, self->_fillColor.CGColor))
+    {
+        self->_fillColor = [fillColor retain];
+        
+        CGGradientRelease(self.borderRadialGradientRef);
+        self->_borderRadialGradientRef = nil;
+        CGGradientRelease(self.bottomRadialGradientRef);
+        self->_bottomRadialGradientRef = nil;
+        
+        [self setNeedsDisplay];
+    }
 
+}
 
 
 
