@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A94232B0171308DC00A49712 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94232AF171308DC00A49712 /* UIKit.framework */; };
+		A94232B2171308DC00A49712 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94232B1171308DC00A49712 /* Foundation.framework */; };
+		A94232B4171308DC00A49712 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94232B3171308DC00A49712 /* CoreGraphics.framework */; };
+		A94232BA171308DC00A49712 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94232B8171308DC00A49712 /* InfoPlist.strings */; };
+		A94232BC171308DC00A49712 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94232BB171308DC00A49712 /* main.m */; };
+		A94232C0171308DC00A49712 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A94232BF171308DC00A49712 /* AppDelegate.m */; };
+		A94232C2171308DC00A49712 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A94232C1171308DC00A49712 /* Default.png */; };
+		A94232C4171308DC00A49712 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A94232C3171308DC00A49712 /* Default@2x.png */; };
+		A94232C6171308DC00A49712 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A94232C5171308DC00A49712 /* Default-568h@2x.png */; };
+		A94232CE17130AC800A49712 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94232CD17130AC800A49712 /* TableViewController.m */; };
+		A94232D017130DF500A49712 /* libRistrettoUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A94232CF17130DF500A49712 /* libRistrettoUI.a */; };
+		A94232D217130DFA00A49712 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94232D117130DFA00A49712 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A94232AC171308DC00A49712 /* NiceCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94232AF171308DC00A49712 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A94232B1171308DC00A49712 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A94232B3171308DC00A49712 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A94232B7171308DC00A49712 /* NiceCell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NiceCell-Info.plist"; sourceTree = "<group>"; };
+		A94232B9171308DC00A49712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A94232BB171308DC00A49712 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A94232BD171308DC00A49712 /* NiceCell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NiceCell-Prefix.pch"; sourceTree = "<group>"; };
+		A94232BE171308DC00A49712 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A94232BF171308DC00A49712 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A94232C1171308DC00A49712 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A94232C3171308DC00A49712 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A94232C5171308DC00A49712 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A94232CC17130AC800A49712 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		A94232CD17130AC800A49712 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		A94232CF17130DF500A49712 /* libRistrettoUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRistrettoUI.a; path = "../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/libRistrettoUI.a"; sourceTree = "<group>"; };
+		A94232D117130DFA00A49712 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A94232A9171308DC00A49712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94232D217130DFA00A49712 /* QuartzCore.framework in Frameworks */,
+				A94232D017130DF500A49712 /* libRistrettoUI.a in Frameworks */,
+				A94232B0171308DC00A49712 /* UIKit.framework in Frameworks */,
+				A94232B2171308DC00A49712 /* Foundation.framework in Frameworks */,
+				A94232B4171308DC00A49712 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A94232A3171308DC00A49712 = {
+			isa = PBXGroup;
+			children = (
+				A94232B5171308DC00A49712 /* NiceCell */,
+				A94232AE171308DC00A49712 /* Frameworks */,
+				A94232AD171308DC00A49712 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A94232AD171308DC00A49712 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A94232AC171308DC00A49712 /* NiceCell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A94232AE171308DC00A49712 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A94232CF17130DF500A49712 /* libRistrettoUI.a */,
+				A94232D117130DFA00A49712 /* QuartzCore.framework */,
+				A94232AF171308DC00A49712 /* UIKit.framework */,
+				A94232B1171308DC00A49712 /* Foundation.framework */,
+				A94232B3171308DC00A49712 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A94232B5171308DC00A49712 /* NiceCell */ = {
+			isa = PBXGroup;
+			children = (
+				A94232BE171308DC00A49712 /* AppDelegate.h */,
+				A94232BF171308DC00A49712 /* AppDelegate.m */,
+				A94232CC17130AC800A49712 /* TableViewController.h */,
+				A94232CD17130AC800A49712 /* TableViewController.m */,
+				A94232B6171308DC00A49712 /* Supporting Files */,
+			);
+			path = NiceCell;
+			sourceTree = "<group>";
+		};
+		A94232B6171308DC00A49712 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94232B7171308DC00A49712 /* NiceCell-Info.plist */,
+				A94232B8171308DC00A49712 /* InfoPlist.strings */,
+				A94232BB171308DC00A49712 /* main.m */,
+				A94232BD171308DC00A49712 /* NiceCell-Prefix.pch */,
+				A94232C1171308DC00A49712 /* Default.png */,
+				A94232C3171308DC00A49712 /* Default@2x.png */,
+				A94232C5171308DC00A49712 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A94232AB171308DC00A49712 /* NiceCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94232C9171308DC00A49712 /* Build configuration list for PBXNativeTarget "NiceCell" */;
+			buildPhases = (
+				A94232A8171308DC00A49712 /* Sources */,
+				A94232A9171308DC00A49712 /* Frameworks */,
+				A94232AA171308DC00A49712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NiceCell;
+			productName = NiceCell;
+			productReference = A94232AC171308DC00A49712 /* NiceCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A94232A4171308DC00A49712 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Marco Meschini";
+			};
+			buildConfigurationList = A94232A7171308DC00A49712 /* Build configuration list for PBXProject "NiceCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A94232A3171308DC00A49712;
+			productRefGroup = A94232AD171308DC00A49712 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A94232AB171308DC00A49712 /* NiceCell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A94232AA171308DC00A49712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94232BA171308DC00A49712 /* InfoPlist.strings in Resources */,
+				A94232C2171308DC00A49712 /* Default.png in Resources */,
+				A94232C4171308DC00A49712 /* Default@2x.png in Resources */,
+				A94232C6171308DC00A49712 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A94232A8171308DC00A49712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94232BC171308DC00A49712 /* main.m in Sources */,
+				A94232C0171308DC00A49712 /* AppDelegate.m in Sources */,
+				A94232CE17130AC800A49712 /* TableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A94232B8171308DC00A49712 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94232B9171308DC00A49712 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A94232C7171308DC00A49712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../RistrettoUI/RistrettoUI/\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A94232C8171308DC00A49712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../RistrettoUI/RistrettoUI/\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A94232CA171308DC00A49712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NiceCell/NiceCell-Prefix.pch";
+				INFOPLIST_FILE = "NiceCell/NiceCell-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A94232CB171308DC00A49712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NiceCell/NiceCell-Prefix.pch";
+				INFOPLIST_FILE = "NiceCell/NiceCell-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A94232A7171308DC00A49712 /* Build configuration list for PBXProject "NiceCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94232C7171308DC00A49712 /* Debug */,
+				A94232C8171308DC00A49712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94232C9171308DC00A49712 /* Build configuration list for PBXNativeTarget "NiceCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94232CA171308DC00A49712 /* Debug */,
+				A94232CB171308DC00A49712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A94232A4171308DC00A49712 /* Project object */;
+}

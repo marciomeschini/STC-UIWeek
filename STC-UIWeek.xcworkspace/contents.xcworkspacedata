@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NiceCell/NiceCell.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ActionSheet/ActionSheet.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:RistrettoUI/RistrettoUI.xcodeproj">
    </FileRef>
    <FileRef

@@ -77,7 +77,6 @@
     return self->_bubbleView;
 }
 
-
 #pragma mark - TableView datasource/delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

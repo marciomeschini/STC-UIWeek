@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A99C8B47171165FF00451072 /* TextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A99C8B46171165FF00451072 /* TextBubbleView.m */; };
-		A99C8B491711A91500451072 /* libRistrettoUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A99C8B481711A91500451072 /* libRistrettoUI.a */; };
 		A99C8B4C1711ADF200451072 /* UIImage+Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = A99C8B4B1711ADF200451072 /* UIImage+Sample.m */; };
 		A99C8B4F1711B19800451072 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99C8B4E1711B19800451072 /* TableViewController.m */; };
+		A9A8C6311712AD1F0074FA57 /* libRistrettoUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A99C8B481711A91500451072 /* libRistrettoUI.a */; };
 		A9D364B51710242200428642 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D364B41710242200428642 /* UIKit.framework */; };
 		A9D364B71710242200428642 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D364B61710242200428642 /* Foundation.framework */; };
 		A9D364B91710242200428642 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D364B81710242200428642 /* CoreGraphics.framework */; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A99C8B491711A91500451072 /* libRistrettoUI.a in Frameworks */,
+				A9A8C6311712AD1F0074FA57 /* libRistrettoUI.a in Frameworks */,
 				A9D364D5171025CC00428642 /* QuartzCore.framework in Frameworks */,
 				A9D364B51710242200428642 /* UIKit.framework in Frameworks */,
 				A9D364B71710242200428642 /* Foundation.framework in Frameworks */,
