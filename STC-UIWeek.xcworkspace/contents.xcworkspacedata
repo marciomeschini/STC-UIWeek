@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PathPrototype/PathPrototype.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SimplePieChart/SimplePieChart.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NiceCell/NiceCell.xcodeproj">
    </FileRef>
    <FileRef

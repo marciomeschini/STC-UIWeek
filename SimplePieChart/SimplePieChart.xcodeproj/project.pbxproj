@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9E7061617140F3F00C22764 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E7061517140F3F00C22764 /* UIKit.framework */; };
+		A9E7061817140F3F00C22764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E7061717140F3F00C22764 /* Foundation.framework */; };
+		A9E7061A17140F3F00C22764 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E7061917140F3F00C22764 /* CoreGraphics.framework */; };
+		A9E7062017140F4000C22764 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9E7061E17140F4000C22764 /* InfoPlist.strings */; };
+		A9E7062217140F4000C22764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E7062117140F4000C22764 /* main.m */; };
+		A9E7062617140F4000C22764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E7062517140F4000C22764 /* AppDelegate.m */; };
+		A9E7062817140F4000C22764 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E7062717140F4000C22764 /* Default.png */; };
+		A9E7062A17140F4000C22764 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E7062917140F4000C22764 /* Default@2x.png */; };
+		A9E7062C17140F4000C22764 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E7062B17140F4000C22764 /* Default-568h@2x.png */; };
+		A9E7063A1714112C00C22764 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E706391714112C00C22764 /* ViewController.m */; };
+		A9E7063C1714113D00C22764 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E7063B1714113D00C22764 /* QuartzCore.framework */; };
+		A9E7063F17155C2B00C22764 /* PieChartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E7063E17155C2B00C22764 /* PieChartLayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9E7061217140F3F00C22764 /* SimplePieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E7061517140F3F00C22764 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9E7061717140F3F00C22764 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9E7061917140F3F00C22764 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9E7061D17140F4000C22764 /* SimplePieChart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimplePieChart-Info.plist"; sourceTree = "<group>"; };
+		A9E7061F17140F4000C22764 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9E7062117140F4000C22764 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9E7062317140F4000C22764 /* SimplePieChart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimplePieChart-Prefix.pch"; sourceTree = "<group>"; };
+		A9E7062417140F4000C22764 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9E7062517140F4000C22764 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9E7062717140F4000C22764 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A9E7062917140F4000C22764 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A9E7062B17140F4000C22764 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A9E706381714112C00C22764 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9E706391714112C00C22764 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A9E7063B1714113D00C22764 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A9E7063D17155C2A00C22764 /* PieChartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartLayer.h; sourceTree = "<group>"; };
+		A9E7063E17155C2B00C22764 /* PieChartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartLayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9E7060F17140F3F00C22764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E7063C1714113D00C22764 /* QuartzCore.framework in Frameworks */,
+				A9E7061617140F3F00C22764 /* UIKit.framework in Frameworks */,
+				A9E7061817140F3F00C22764 /* Foundation.framework in Frameworks */,
+				A9E7061A17140F3F00C22764 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9E7060917140F3F00C22764 = {
+			isa = PBXGroup;
+			children = (
+				A9E7061B17140F4000C22764 /* SimplePieChart */,
+				A9E7061417140F3F00C22764 /* Frameworks */,
+				A9E7061317140F3F00C22764 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9E7061317140F3F00C22764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9E7061217140F3F00C22764 /* SimplePieChart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9E7061417140F3F00C22764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9E7063B1714113D00C22764 /* QuartzCore.framework */,
+				A9E7061517140F3F00C22764 /* UIKit.framework */,
+				A9E7061717140F3F00C22764 /* Foundation.framework */,
+				A9E7061917140F3F00C22764 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9E7061B17140F4000C22764 /* SimplePieChart */ = {
+			isa = PBXGroup;
+			children = (
+				A9E7062417140F4000C22764 /* AppDelegate.h */,
+				A9E7062517140F4000C22764 /* AppDelegate.m */,
+				A9E706381714112C00C22764 /* ViewController.h */,
+				A9E706391714112C00C22764 /* ViewController.m */,
+				A9E7063D17155C2A00C22764 /* PieChartLayer.h */,
+				A9E7063E17155C2B00C22764 /* PieChartLayer.m */,
+				A9E7061C17140F4000C22764 /* Supporting Files */,
+			);
+			path = SimplePieChart;
+			sourceTree = "<group>";
+		};
+		A9E7061C17140F4000C22764 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9E7061D17140F4000C22764 /* SimplePieChart-Info.plist */,
+				A9E7061E17140F4000C22764 /* InfoPlist.strings */,
+				A9E7062117140F4000C22764 /* main.m */,
+				A9E7062317140F4000C22764 /* SimplePieChart-Prefix.pch */,
+				A9E7062717140F4000C22764 /* Default.png */,
+				A9E7062917140F4000C22764 /* Default@2x.png */,
+				A9E7062B17140F4000C22764 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9E7061117140F3F00C22764 /* SimplePieChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E7062F17140F4000C22764 /* Build configuration list for PBXNativeTarget "SimplePieChart" */;
+			buildPhases = (
+				A9E7060E17140F3F00C22764 /* Sources */,
+				A9E7060F17140F3F00C22764 /* Frameworks */,
+				A9E7061017140F3F00C22764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimplePieChart;
+			productName = SimplePieChart;
+			productReference = A9E7061217140F3F00C22764 /* SimplePieChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9E7060A17140F3F00C22764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Marco Meschini";
+			};
+			buildConfigurationList = A9E7060D17140F3F00C22764 /* Build configuration list for PBXProject "SimplePieChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9E7060917140F3F00C22764;
+			productRefGroup = A9E7061317140F3F00C22764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9E7061117140F3F00C22764 /* SimplePieChart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9E7061017140F3F00C22764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E7062017140F4000C22764 /* InfoPlist.strings in Resources */,
+				A9E7062817140F4000C22764 /* Default.png in Resources */,
+				A9E7062A17140F4000C22764 /* Default@2x.png in Resources */,
+				A9E7062C17140F4000C22764 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9E7060E17140F3F00C22764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E7062217140F4000C22764 /* main.m in Sources */,
+				A9E7062617140F4000C22764 /* AppDelegate.m in Sources */,
+				A9E7063A1714112C00C22764 /* ViewController.m in Sources */,
+				A9E7063F17155C2B00C22764 /* PieChartLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9E7061E17140F4000C22764 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9E7061F17140F4000C22764 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9E7062D17140F4000C22764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9E7062E17140F4000C22764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9E7063017140F4000C22764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimplePieChart/SimplePieChart-Prefix.pch";
+				INFOPLIST_FILE = "SimplePieChart/SimplePieChart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9E7063117140F4000C22764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimplePieChart/SimplePieChart-Prefix.pch";
+				INFOPLIST_FILE = "SimplePieChart/SimplePieChart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9E7060D17140F3F00C22764 /* Build configuration list for PBXProject "SimplePieChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E7062D17140F4000C22764 /* Debug */,
+				A9E7062E17140F4000C22764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9E7062F17140F4000C22764 /* Build configuration list for PBXNativeTarget "SimplePieChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E7063017140F4000C22764 /* Debug */,
+				A9E7063117140F4000C22764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9E7060A17140F3F00C22764 /* Project object */;
+}

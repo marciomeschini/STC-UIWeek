@@ -10,7 +10,7 @@
 #import "CustomPickerController.h"
 
 #define kBackgroundColor        [[UIColor blackColor] colorWithAlphaComponent:.4f]
-#define kAnimationDuration      .25f
+#define kAnimationDuration      .5f
 
 
 @interface CustomPickerController () <UIPickerViewDataSource, UIPickerViewDelegate>
@@ -78,6 +78,9 @@
     self.containerView.frame = containerFrame;
     self.containerView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
     [self.view addSubview:self.containerView];
+    
+
+    
 //    self.containerView.layer.borderWidth = 1.0f;
 //    self.containerView.layer.borderColor = [UIColor redColor].CGColor;
     
@@ -229,14 +232,24 @@
     
     self.oldWindow = [UIApplication sharedApplication].keyWindow;
     
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
 //    [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate date]];
     
     CGRect windowFrame = [UIScreen mainScreen].bounds;
     self.currentWindow = [[[UIWindow alloc] initWithFrame:windowFrame] autorelease];
 //    self.currentWindow.alpha = .0f;
-    self.currentWindow.windowLevel = UIWindowLevelNormal;//self.oldWindow.windowLevel + 1;
+    self.currentWindow.windowLevel = UIWindowLevelStatusBar;
+    self.currentWindow.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     self.currentWindow.rootViewController = self;
-    [self.currentWindow makeKeyAndVisible];
+    self.currentWindow.hidden = NO;
+    self.currentWindow.layer.borderWidth = 3.0f;
+    self.currentWindow.layer.borderColor = [UIColor redColor].CGColor;
+//    [self.currentWindow makeKeyAndVisible];
+    
+    UIView *coverView = [[[UIView alloc] initWithFrame:(CGRect){.0f, .0f, 320.0f, 20.0f}] autorelease];
+    coverView.backgroundColor = [UIColor clearColor];
+    [self.currentWindow addSubview:coverView];
     
 //    UIGraphicsBeginImageContextWithOptions(self.oldWindow.bounds.size, YES, .0f);
 //    CGContextRef context = UIGraphicsGetCurrentContext();
@@ -252,7 +265,8 @@
     
     //
     [UIView animateWithDuration:kAnimationDuration animations:^{
-        self.view.backgroundColor = [UIColor blackColor];//self.backgroundColor;
+        coverView.backgroundColor = self.backgroundColor;
+        self.view.backgroundColor = self.backgroundColor;
         self.containerView.frame = CGRectOffset(self.containerView.frame, .0f, -offset);
         
     }];
@@ -265,6 +279,8 @@
 //        [self willMoveToParentViewController:nil];
 //        [self.view removeFromSuperview];
 //        [self removeFromParentViewController];
+        
+        [[UIApplication sharedApplication] setStatusBarHidden:NO];
         
         [self.currentWindow resignKeyWindow];
         [self.oldWindow makeKeyAndVisible];
