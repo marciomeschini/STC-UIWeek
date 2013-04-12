@@ -29,7 +29,7 @@
                                                                target:self
                                                                action:@selector(_doneButtonDidTap:)] autorelease];
     rootVC.navigationItem.rightBarButtonItem = button;
-
+    
 //    CustomPickerController *vc = [[[CustomPickerController alloc] init] autorelease];
     
     UINavigationController *nc = [[[UINavigationController alloc] initWithRootViewController:rootVC] autorelease];
@@ -47,14 +47,20 @@
 
 - (void)_doneButtonDidTap:(id)sender
 {    
-    NSArray *dummyArray = @[@"blackColor", @"redColor", @"greenColor", @"orangeColor"];
+    NSArray *dummyArray = @[@"scrollViewTexturedBackgroundColor", @"blackColor", @"redColor", @"greenColor", @"orangeColor"];
     CustomPickerController *vc = [[[CustomPickerController alloc] init] autorelease];
     vc.values = dummyArray;
+    __block typeof(self) weakself = self;
     vc.didSelectRowBlock = ^(CustomPickerController *picker, NSInteger row){
         NSLog(@"selected row:%i, %@", row, dummyArray[row]);
+        weakself.window.backgroundColor = [UIColor performSelector:NSSelectorFromString(dummyArray[row])];
     };
 
     [vc showAnimated:YES];
+    
+//    [self.window.rootViewController presentViewController:vc
+//                                                 animated:YES
+//                                               completion:NULL];
 }
 
 - (void)_myDebugHook:(id)sedner

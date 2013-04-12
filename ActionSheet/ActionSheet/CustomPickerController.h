@@ -14,14 +14,13 @@ typedef void(^CustomPickerControllerDidSelectRowBlock)(CustomPickerController *p
 @interface CustomPickerController : UIViewController
 
 @property (nonatomic, retain) UIColor *backgroundColor;
-@property (nonatomic, retain) NSArray *values; // accepts only string values
+@property (nonatomic, retain) NSArray *values; // please use only string values
 @property (nonatomic, copy) CustomPickerControllerDidSelectRowBlock didSelectRowBlock;
+@property (nonatomic, assign) UIInterfaceOrientation preferredInterfaceOrientation; // UIInterfaceOrientationMaskPortrait
 
-//- (void)presentFromViewController:(UIViewController *)viewController;
-//- (void)presentFromViewController:(UIViewController *)viewController animated:(BOOL)animated;
+@property (nonatomic, readonly, retain) UIPickerView *pickerView;
 
 - (void)showAnimated:(BOOL)animated;
-
 - (void)dismissAnimated:(BOOL)animated;
 
 @end

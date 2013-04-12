@@ -60,6 +60,23 @@
     [self.view addGestureRecognizer:panGesture];
 }
 
+//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    [super touchesBegan:touches withEvent:event];
+// 
+////    CGPoint point = 
+//}
+//
+//- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    [super touchesMoved:touches withEvent:event];
+//}
+//
+//- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    [super touchesEnded:touches withEvent:event];
+//}
+
 - (void)_handleGesture:(UIPanGestureRecognizer *)gesture
 {
     CGPoint translation = [gesture translationInView:gesture.view];
